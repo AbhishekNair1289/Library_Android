@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/library"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/library"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LibraryApp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".Librarian.SendEmail" />
+        <activity
+            android:name=".Librarian.ADDBOOK"
+            android:parentActivityName=".Librarian.LibraryHomeActivity" />
+        <activity
+            android:name=".Librarian.ReturnBookActivity"
+            android:parentActivityName=".Librarian.LibraryHomeActivity" />
+        <activity
+            android:name=".Student.ui.Search"
+            android:parentActivityName=".Student.StudentHomepage" />
+        <activity android:name=".Librarian.IssueBookActivity" />
+        <activity
+            android:name=".Librarian.ViewUserActivity"
+            android:parentActivityName=".Librarian.LibraryHomeActivity" />
+        <activity
+            android:name=".Librarian.AddUserActivity"
+            android:parentActivityName=".Librarian.LibraryHomeActivity" />
+        <activity
+            android:name=".Librarian.UpdateBookActivity"
+            android:parentActivityName=".Librarian.LibraryHomeActivity" />
+        <activity
+            android:name=".Librarian.ViewBookActivity"
+            android:parentActivityName=".Librarian.LibraryHomeActivity" />
+        <activity
+            android:name=".Librarian.AddQPActivity"
+            android:parentActivityName=".Librarian.LibraryHomeActivity" />
+        <activity
+            android:name=".Librarian.AddBookActivity"
+            android:parentActivityName=".Librarian.LibraryHomeActivity" />
+        <activity
+            android:name=".Student.BookDetail"
+            android:parentActivityName=".Student.StudentHomepage" />
+        <activity android:name=".Student.StudentHomepage" />
+        <activity android:name=".Librarian.LibraryHomeActivity" />
+        <activity android:name=".Student.StudentsLogin" />
+        <activity android:name=".Librarian.LibrarianLogin" />
+        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

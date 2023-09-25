@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_card"
+    android:layout_margin="10dp">
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bookcardbg"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/tv_bookimage"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_bookid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="bookid"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tv_bookimage" />
+
+        <TextView
+            android:id="@+id/tv_bookname"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="Book Name"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tv_bookid" />
+        <TextView
+            android:id="@+id/tv_bookauthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Book Author"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tv_bookname" />
+        <TextView
+            android:id="@+id/tv_bookpublisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Book Publisher"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tv_bookauthor" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

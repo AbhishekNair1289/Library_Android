@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.libraryapp.Student.ui.Home"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_newarrivals"
+        android:name="com.example.libraryapp.Student.ui.NewArrivals"
+        android:label="@string/menu_newarrivals"
+        tools:layout="@layout/fragment_newarrivals" />
+
+    <fragment
+        android:id="@+id/nav_myprofile"
+        android:name="com.example.libraryapp.Student.ui.Myprofile"
+        android:label="@string/menu_myprofile"
+        tools:layout="@layout/fragment_myprofile" />
+    <fragment
+        android:id="@+id/nav_previousyesrqp"
+        android:name="com.example.libraryapp.Student.ui.SearchPreviousyearQP"
+        android:label="@string/menu_previousyearqp"
+        tools:layout="@layout/fragment_search_previousyear_q_p" />
+    <fragment
+        android:id="@+id/nav_bookstaken"
+        android:name="com.example.libraryapp.Student.ui.BooksTaken"
+        android:label="@string/menu_bookstaken"
+        tools:layout="@layout/fragment_books_taken" />
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="com.example.libraryapp.Student.ui.Search"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" />
+
+</navigation>

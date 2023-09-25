@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    android:background="@drawable/background">
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/apbar"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/chooseyouroptiontxt"
+        android:layout_marginTop="70dp"
+        android:layout_below="@id/apbar"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"/>
+
+    <ImageButton
+        android:id="@+id/alh_addbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/addbookbtn" />
+
+    <ImageButton
+        android:id="@+id/alh_viewbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/viewbookbtn" />
+
+    <ImageButton
+        android:id="@+id/alh_updatebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/alh_viewbook"
+        android:background="@drawable/updatebookbtn" />
+
+
+    <ImageButton
+        android:id="@+id/alh_viewuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alh_viewbook"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/viewuserbtn" />
+
+    <ImageButton
+        android:id="@+id/alh_adduser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alh_updatebook"
+        android:background="@drawable/adduserbtn"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"/>
+    <ImageButton
+        android:id="@+id/alh_addqp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alh_viewuser"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/addqp" />
+
+</RelativeLayout>

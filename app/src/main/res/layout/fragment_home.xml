@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student.StudentHomepage"
+    android:background="@drawable/background">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/card1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card1bg"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hey ,"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:fontFamily="cursive"/>
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Your Favorite Books"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/text1"
+                android:fontFamily="cursive"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/newarrivalstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_arrivals"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_below="@id/card1"
+        android:layout_marginLeft="10dp"
+
+        android:textStyle="bold"
+        android:layout_marginStart="10dp" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newarrivalstxt"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+            <ProgressBar
+                android:id="@+id/newarrival_simpleProgressBar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:visibility="invisible"
+                android:layout_centerInParent="true"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/newarrivalsrecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#ffffff" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <HorizontalScrollView
+        android:id="@+id/horizontalview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/card2">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/category_tablayout"
+            android:layout_width="match_parent"
+            app:tabMinWidth="125dp"
+            app:tabGravity="center"
+            app:tabBackground="@drawable/categorynamebg"
+            android:layout_height="50dp"/>
+    </HorizontalScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontalview"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/transparentbg">
+            <FrameLayout
+                android:id="@+id/subcategory_framelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

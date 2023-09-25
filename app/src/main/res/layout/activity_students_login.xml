@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Student.StudentsLogin">
+
+    <View
+        android:id="@+id/all_view1"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/studentlogintxt" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/all_view1"
+        android:layout_marginTop="100dp"
+        >
+
+        <EditText
+            android:id="@+id/asl_userid_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="75dp"
+            android:background="@drawable/edittextbg"
+            android:hint="Register No"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/asl_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/asl_userid_et"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittextbg"
+            android:hint="DOB  (YYYY-MM-DD)"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/asl_login_btn"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/asl_password_et"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/loginbtn" />
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/asl_simpleProgressBar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center|top"
+    tools:context=".Librarian.AddBookActivity">
+
+    <TextView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="ADD BOOK"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/img"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <ImageView
+                android:id="@+id/aab_bookimg"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/addbookimagebg" />
+
+            <EditText
+                android:id="@+id/aab_bookname"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aab_bookimg"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittextbg"
+                android:hint="Book Name"
+                android:padding="10dp"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/aab_bookauthor"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aab_bookname"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittextbg"
+
+                android:hint="Book Author Name"
+                android:padding="10dp"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/aab_bookpublisher"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aab_bookauthor"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittextbg"
+                android:hint="Book Publisher"
+                android:padding="10dp"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/aab_bookdesp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aab_bookpublisher"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittextbg"
+                android:hint="Book Description"
+                android:padding="10dp"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/aab_noofbookcopies"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aab_bookdesp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittextbg"
+                android:hint="No of Book Copies"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/aab_catid"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aab_noofbookcopies"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittextbg"
+                android:hint="Category ID"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/aab_addbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aab_catid"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/addbtnbg" />
+        </RelativeLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/aab_simpleProgressBar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        />
+
+
+
+</RelativeLayout>

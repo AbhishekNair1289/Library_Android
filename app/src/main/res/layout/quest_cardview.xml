@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/qcv_card"
+    android:layout_margin="10dp">
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bookcardbg"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/qcv_pdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:hint="bookid"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+
+<!--        <TextView-->
+<!--            android:id="@+id/qcv_pdfname"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="bookid"-->
+<!--            android:textSize="13dp"-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_below="@id/qcv_pdf" />-->
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

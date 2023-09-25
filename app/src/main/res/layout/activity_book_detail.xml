@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Student.BookDetail">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amita"
+        android:text="Detail Book"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintVertical_bias="0.0">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btground"
+            android:layout_margin="30dp">
+
+            <ImageView
+                android:id="@+id/abd_bookimage"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bookimagebg"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:id="@+id/abd_bookid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Book ID : "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/abd_bookimage"/>
+
+            <TextView
+                android:id="@+id/abd_bookname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Book Name "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/abd_bookid" />
+
+            <TextView
+                android:id="@+id/abd_bookauthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Book Author : "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/abd_bookname" />
+
+            <TextView
+                android:id="@+id/abd_bookpublisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Book Publisher : "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/abd_bookauthor" />
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/abd_bookpublisher">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/abd_bookdescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Book Discription : "
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+            </ScrollView>
+
+
+            <TextView
+                android:id="@+id/abd_noofcopies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Remaining no of copies : "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_marginBottom="50dp"
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/scrollView2"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <ProgressBar
+        android:id="@+id/abd_simpleProgressBar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

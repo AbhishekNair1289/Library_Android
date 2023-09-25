@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Librarian.IssueBookActivity"
+    android:background="@drawable/background">
+    <TextView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="ISSUE BOOK"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/aib_stuid"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextbg"
+        android:hint="Student ID"
+        android:textSize="20dp"
+        android:layout_below="@id/img"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/aib_stuname"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextbg"
+        android:hint="Student Name"
+        android:textSize="20dp"
+        android:layout_below="@id/aib_stuid"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/aib_bookid"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextbg"
+        android:hint="Book ID"
+        android:textSize="20dp"
+        android:layout_below="@id/aib_stuname"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/aib_bookname"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextbg"
+        android:hint="Book Name"
+        android:textSize="20dp"
+        android:layout_below="@id/aib_bookid"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/aib_bookauthor"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextbg"
+        android:hint="Book Author"
+        android:textSize="20dp"
+        android:layout_below="@id/aib_bookname"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/aib_issuedate"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextbg"
+        android:hint="Issue Date"
+        android:textSize="20dp"
+        android:layout_below="@id/aib_bookauthor"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/aib_addbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/addbtnbg"
+        android:layout_below="@id/aib_issuedate"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"/>
+
+
+</RelativeLayout>

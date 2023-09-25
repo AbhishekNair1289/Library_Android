@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/blc_card"
+    android:layout_margin="10dp">
+    <RelativeLayout
+        android:layout_width="175dp"
+        android:layout_height="225dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bookcardbg"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/blc_bookimage"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:id="@+id/blc_bookid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="bookid"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/blc_bookimage" />
+
+        <TextView
+            android:id="@+id/blc_bookname"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="Book Name"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/blc_bookid" />
+        <TextView
+            android:id="@+id/blc_bookauthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Book Author"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/blc_bookname" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

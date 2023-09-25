@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Librarian.IssueBookActivity"
+    android:background="@drawable/background">
+    <TextView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="Return Book"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/arb_bookid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="Issue Date"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/img"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/arb_issuedate"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextbg"
+        android:hint="Issue Date"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/arb_bookid"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/img"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_toEndOf="@id/arb_bookid"
+        android:layout_marginStart="20dp" />
+    <TextView
+        android:id="@+id/arb_fine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="Return Date"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/arb_bookid"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp" />
+    <EditText
+        android:id="@+id/arb_returndate"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextbg"
+        android:hint="Return Date"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/arb_fine"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/arb_issuedate"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_toEndOf="@id/arb_fine"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="30dp" />
+
+    <Button
+        android:id="@+id/arb_addbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/returnbtn"
+        android:layout_below="@id/arb_fine"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"/>
+
+
+</RelativeLayout>
